@@ -18,6 +18,8 @@ class BookController extends Controller
     public function add_book()
     {
         $author = Author::all();
+
+        
         return view('admin.book.add_book',compact('author'));
     }
     public function create(BookAddRequest $req)
